@@ -4,8 +4,9 @@ BitDecoder is a simple desktop utility built with **C++**, **Dear ImGui**, **GLF
 
 * Convert normal text to binary
 * Convert binary back to text
+* Convert binary back to text
 * Copy results to the clipboard
-* Quickly clear input fields
+* Quicklyly clear input fields
 
 It is designed as a lightweight, fast, private and easy-to-use tool with a clean graphical interface.
 
@@ -22,7 +23,6 @@ It is designed as a lightweight, fast, private and easy-to-use tool with a clean
 * Does not collect any data from the user
 * Cross-platform (Linux, Windows, macOS with minor changes)
 
-
 ---
 
 ## 🖼️ Screenshot
@@ -37,15 +37,20 @@ It is designed as a lightweight, fast, private and easy-to-use tool with a clean
 - C++17 compatible compiler
 - GLFW
 - OpenGL
-- Dear ImGui (included in the `external/` directory)
+- Dear ImGui (included as a **git submodule** in `external/imgui`)
 
 ---
 
-## 🔧 Build Instructions (Linux)
+## 📦 Cloning the repository
+
+This project uses **git submodules** to include Dear ImGui.
+
+You must clone it like this:
 
 ```bash
-git clone https://github.com/yourusername/BitDecoder.git
-cd BitDecoder
+git clone --recurse-submodules https://github.com/Joa98Dev/bitdecoder.git
+```
+## 🔧 Build Instructions (Linux)
 mkdir build
 cd build
 cmake ..
