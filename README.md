@@ -51,9 +51,11 @@ You must clone it like this:
 git clone --recurse-submodules https://github.com/Joa98Dev/bitdecoder.git
 ```
 ## 🔧 Build Instructions (Linux)
+```bash
 mkdir build
 cd build
 cmake ..
 make
 ./BitDecoder
+```
 
